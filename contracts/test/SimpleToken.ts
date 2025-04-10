@@ -7,6 +7,8 @@ describe("SimpleToken", function () {
   let token: SimpleToken;
   let owner: any;
   let addr1: any;
+  console.log(process.env.PRIVATE_KEY)
+
 
   beforeEach(async function () {
     [owner, addr1] = await hardhatEthers.getSigners();
